@@ -1,0 +1,73 @@
+<!--------------------------------If Else---------------------------------------------------------------->
+<!-- <div>
+    <button class="btn btn-success" (click)="contentVisibility()">
+        <span *ngIf="!isShowing">Show Content</span>
+        <span *ngIf="isShowing">Hide Content</span>
+    </button>
+    <br><br>
+    <div *ngIf="isShowing">
+        <h2>Welcome to Angular</h2>  
+    </div>
+</div> -->
+
+<!-- <div>
+    <button class="btn btn-success" (click)="contentVisibility()">
+        <span *ngIf="!isShowing">Show Content</span>
+        <span *ngIf="isShowing">Hide Content</span>
+    </button>
+    <br><br>
+    <div *ngIf="isShowing; then thenblock else elseblock">
+        <h2>Welcome to Angular</h2>  
+    </div>
+    <ng-template #thenblock>
+        <div>Welcome to React</div>
+    </ng-template>
+    <ng-template #elseblock>
+        <div>Welcome to Spring Boot</div>
+    </ng-template>
+</div> -->
+
+<!-------------------------------------------Switch Case------------------------------------------------->
+<!-- <div class="container">
+    <div class="col-md-4">
+        <label for="">Pick One Country :</label>&nbsp;
+        <select (change)="getCountryName($event)">
+
+            <option value="Africa">Africa</option>
+            <option value="India">India</option>
+            <option value="Korea">Korea</option>
+            <option value="USA">USA</option>
+        </select>
+    </div>
+    <div class="col-md-12" [ngSwitch]="countryName">
+        <h4 class="text-success" *ngSwitchCase="'Australia'">Selected Country: Australia</h4>
+        <h4 class="text-success" *ngSwitchCase="'Africa'">Selected Country: Africa</h4>
+        <h4 class="text-success" *ngSwitchCase="'India'">Selected Country: India</h4>
+        <h4 class="text-success" *ngSwitchCase="'Korea'">Selected Country: Korea</h4>
+        <h4 class="text-success" *ngSwitchCase="'USA'">Selected Country: USA</h4>
+    </div>
+</div> -->
+
+<!----------------------------------For Loop-------------------------------------------------------->
+<div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+                <th>Sr. No</th>
+                <th>Country Code</th>
+                <th>Country Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of countries; index as i">
+                <td>{{i+1}}</td>
+                <td>{{country.code}}</td>
+                <td>{{country.countryName}}</td>
+            </tr> 
+        </tbody>
+    </table>
+    </div>
+    </div>
+</div>
